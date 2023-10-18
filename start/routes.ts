@@ -5,4 +5,5 @@ Route.get('/', async () => {
 })
 Route.group(() => {
   Route.resource('places', 'PlaceController')
+  Route.resource('users', 'UserController')
 }).prefix('api/v1')
