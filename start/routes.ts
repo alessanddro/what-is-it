@@ -5,5 +5,6 @@ Route.get('/', async () => {
 })
 Route.group(() => {
   Route.resource('places', 'PlaceController')
+  Route.resource('comments', 'CommentsController')
   Route.resource('users', 'UserController')
 }).prefix('api/v1')
