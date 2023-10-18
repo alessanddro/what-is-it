@@ -5,4 +5,5 @@ Route.get('/', async () => {
 })
 Route.group(() => {
   Route.resource('places', 'PlaceController')
+  Route.resource('sponsors', 'SponsorController')
 }).prefix('api/v1')
